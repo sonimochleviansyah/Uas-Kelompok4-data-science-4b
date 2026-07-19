@@ -1,5 +1,4 @@
-# Tugas Pengganti UAS — Data Science
-
+# Tugas Pengganti UTS — Data Science
 ## Klastering Pola Konsumsi Energi Rumah Tangga untuk Efisiensi Distribusi PLN
 
 **Kelompok 3 | Mata Kuliah Data Science**
@@ -9,7 +8,7 @@
 ## Anggota Kelompok
 
 | NIM | Nama | Peran |
-|------|--------------------------|----------------------|
+|-----|------|-------|
 | 301240040 | Tegar Bagus Permana | Project Lead / PPT |
 | 301240037 | Sigit Miraj Permana | ML Engineer |
 | 301240041 | Selsa Shafana Alifiyani | Data Analyst |
@@ -20,18 +19,18 @@
 ## Struktur Proyek
 
 ```
-Tugas_Pengganti_UAS_Kelompok3/
+Tugas_Penganti_UTS_Kelompok3/
 ├── data/
 │   ├── raw/                        # Dataset mentah dari UCI (tidak di-commit)
 │   └── processed/
 │       └── clean_power_data.csv    # Data bersih hasil preprocessing
 ├── models/
-│   ├── birch_model.pkl             # Model Birch terlatih
+│   ├── kmeans_model.pkl            # Model K-Means terlatih
 │   └── scaler.pkl                  # Objek StandardScaler
 ├── notebooks/
-│   └── Tugas_Pengganti_UAS_Kelompok3.ipynb  # Notebook utama CRISP-DM
+│   └── Tugas_Penganti_UTS_Kelompok3.ipynb  # Notebook utama CRISP-DM
 ├── outputs/
-│   └── cluster_daily_load_profile.png       # Grafik kurva beban klaster
+│   └── cluster_daily_load_profile.png      # Grafik kurva beban klaster
 ├── src/
 │   └── train_model.py              # Script pipeline training
 ├── .gitignore
@@ -44,45 +43,37 @@ Tugas_Pengganti_UAS_Kelompok3/
 ## Cara Menjalankan
 
 ### 1. Install dependencies
-
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 2. Jalankan pipeline training
-
 ```bash
 python src/train_model.py
 ```
 
 ### 3. Buka notebook
-
 ```bash
-jupyter notebook notebooks/Tugas_Pengganti_UAS_Kelompok3.ipynb
+jupyter notebook notebooks/Tugas_Penganti_UTS_Kelompok3.ipynb
 ```
 
 ---
 
 ## Dataset
 
-**Sumber:** UCI Machine Learning Repository
-
-**Nama:** Individual Household Electric Power Consumption
-
-**Periode:** Desember 2006 — November 2010
-
-**Subset:** 100.000 observasi pertama
+- **Sumber:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption)
+- **Nama:** Individual Household Electric Power Consumption
+- **Periode:** Desember 2006 — November 2010
+- **Subset:** 100.000 observasi pertama
 
 ---
 
 ## Hasil Model
 
-| Metrik | K-Means | Birch |
-|--------|---------:|-------:|
-| Jumlah Klaster (K) | 3 | 3 |
-| Silhouette Score | 0.3534 | **0.5400** |
-| Interpretasi | Cukup / Reasonable Structure | **Baik / Good Cluster Structure** |
-
-### Kesimpulan
-
-Berdasarkan hasil evaluasi menggunakan **Silhouette Score**, algoritma **Birch Clustering** menghasilkan performa yang lebih baik dibandingkan **K-Means Clustering**. Oleh karena itu, Birch dipilih sebagai model akhir dalam proses klastering pola konsumsi energi rumah tangga.
+| Metrik | Nilai |
+|--------|-------|
+| Algoritma | K-Means Clustering |
+| Jumlah Klaster (K) | 3 |
+| Silhouette Score | 0.3534 |
+| Interpretasi | Cukup / Reasonable Structure |
+# UTS_Data-Science
