@@ -1,4 +1,4 @@
-# Tugas Pengganti UTS — Data Science
+# Tugas Pengganti UAS — Data Science
 ## Klastering Pola Konsumsi Energi Rumah Tangga untuk Efisiensi Distribusi PLN
 
 **Kelompok 3 | Mata Kuliah Data Science**
@@ -12,7 +12,7 @@
 | 301240040 | Tegar Bagus Permana | Project Lead / PPT |
 | 301240037 | Sigit Miraj Permana | ML Engineer |
 | 301240041 | Selsa Shafana Alifiyani | Data Analyst |
-| 301240030 | Sony Moch Leviansyah | Data Engineer |
+| 301240030 | SonI Moch Leviansyah | Data Engineer |
 
 ---
 
@@ -76,4 +76,4 @@ jupyter notebook notebooks/Tugas_Penganti_UTS_Kelompok3.ipynb
 | Jumlah Klaster (K) | 3 |
 | Silhouette Score | 0.3534 |
 | Interpretasi | Cukup / Reasonable Structure |
-# UTS_Data-Science
+# UAS_Data-Science
